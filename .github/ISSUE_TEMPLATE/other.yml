@@ -1,0 +1,14 @@
+name: その他要望・メッセージ
+description: Regex-100knocksに関する機能面以外での要望や開発者へのメッセージなどに関するお問い合わせ
+title: "OTH: "
+labels: []
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 詳細をご記載ください．
+      description: >
+        
+    validations:
+      required: true

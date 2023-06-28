@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "chapter": "基礎的な記法",
+      "questions": [
+        { 
+          "id": 1,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["位置指定子"],
+          "question": "",
+          "targetData": "cat\ncategory\ncatalog\ncat\nconcat\nvacation\ncat",
+          "hint": "",
+          "answer": {
+            "regex": "^cat$",
+            "regexOption": "mg",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        {
+          "id": 2,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["量指定子"],
+          "question": "",
+          "targetData": "Match either flavor or flavour.",
+          "hint": "",
+          "answer": {
+            "regex": "flavou?r",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        { 
+          "id": 3,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["量指定子"],
+          "question": "",
+          "targetData": "ggle\ngogle\ngoogle\ngooogle\ngoooogle",
+          "hint": "",
+          "answer": {
+            "regex": "go+gle",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        {
+          "id": 4,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["量指定子"],
+          "question": "",
+          "targetData": "ggle\ngogle\ngoogle\ngooogle\ngoooogle",
+          "hint": "",
+          "answer": {
+            "regex": "go*gle",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        { 
+          "id": 5,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["量指定子"],
+          "question": "",
+          "targetData": "gren\ngreen\ngreeen\ngreeeen\ngreeeeen",
+          "hint": "",
+          "answer": {
+            "regex": "gre{2,3}n",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        {
+          "id": 6,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["文字クラス"],
+          "question": "",
+          "targetData": "the quick brown 1a2y fox jumps over the 9uick 6r0wn lazy dog.",
+          "hint": "",
+          "answer": {
+            "regex": "\\b[a-z]+\\b",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        { 
+          "id": 7,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["文字クラス"],
+          "question": "",
+          "targetData": "The queen quickly quoted a famous saying, and the quiet quarterback observed her with curiosity.",
+          "hint": "",
+          "answer": {
+            "regex": "\\w*q\\w*",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        {
+          "id": 8,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["否定文字クラス"],
+          "question": "",
+          "targetData": "the quick brown 1a2y fox jumps over the 9uick 6r0wn lazy dog.",
+          "hint": "",
+          "answer": {
+            "regex": "\\b[^0-9 ]+\\b",
+            "regexOption": "gi",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        { 
+          "id": 9,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["選択"],
+          "question": "",
+          "targetData": "1month.com.abc\n1000pt.com.abc\n6month.com.abc\n9month.com.abc\n500pt.com.abc\n3month.com.abc\n6month.com.abc\n1000pt.com.abc\n3month.com.abc\n500pt.com.abc\n9month.com.abc\n1year.com.abc\n3month.com.abc\n3month.com.abc",
+          "hint": "",
+          "answer": {
+            "regex": "\\d+(month|year)\\.com\\.abc",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        },
+        {
+          "id": 10,
+          "difficulty": 1,
+          "type": "match",
+          "title": "",
+          "tags": ["後方参照"],
+          "question": "",
+          "targetData": "<h1>Regex 100 knocks</h1>\n<h2>About Regex</h2>\n<p>....</p>\n<h2>Use Regex</h2>\n<h3>anchor</h3>\n<h3>operator</h3>",
+          "hint": "",
+          "answer": {
+            "regex": "<(h1|h2)>.+<\/\\1>",
+            "regexOption": "g",
+            "regexReplace": "",
+            "comment": ""
+          }
+        }
+      ]
+    }
+  ]
+}

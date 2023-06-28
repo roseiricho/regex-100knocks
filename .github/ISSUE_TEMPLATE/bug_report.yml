@@ -1,0 +1,39 @@
+name: 不具合報告
+description: Regex-100knocksの不具合などに関するお問い合わせ
+title: "BUG: "
+labels: [Bug, Needs Triage]
+
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 確認事項
+      options:
+        - label: >
+            すでに報告された不具合の中に同様の事象がないことを確認しました.
+          required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: どのような条件下で不具合が起きたかご記載ください．
+      description: >
+        
+      render: javascript
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 不具合の内容について詳しくご記載ください．
+      description: >
+
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 望まれる挙動についてご記載ください．
+      description: >
+
+    validations:
+      required: true
